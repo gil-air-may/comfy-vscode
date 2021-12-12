@@ -1,0 +1,85 @@
+{
+  "vim.easymotion": true,
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": false,
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t",
+        "r"
+      ],
+      "commands": [
+        "workbench.action.terminal.toggleTerminal"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        ";"
+      ],
+      "after": [
+        "end"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "0"
+      ],
+      "after": [
+        "home"
+      ]
+    },
+  ],
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "editor.formatOnSave": true,
+  "keyboard.dispatch": "keyCode",
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "[python]": {
+    "editor.tabSize": 4,
+  },
+  "python.languageServer": "Pylance",
+  "python.formatting.autopep8Path": "${workspaceFolder}/venv/bin/autopep8",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#8FBCBB",
+    "statusBar.noFolderBackground": "#8FBCBB",
+    "statusBar.debuggingBackground": "#8FBCBB",
+    "statusBar.foreground": "#434C5E"
+  },
+  "editor.fontFamily": "JetBrainsMonoNL Nerd Font, 'monospace', monospace, 'Droid Sans Fallback'",
+  "workbench.settings.editor": "json",
+  "workbench.settings.useSplitJSON": true,
+  "explorer.confirmDragAndDrop": false,
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
+  },
+  "window.menuBarVisibility": "toggle",
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter-notebook",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "workbench.colorTheme": "Darcula Theme from IntelliJ"
+}
